@@ -36,7 +36,7 @@ public class Main {
     // Функция для генерации случайных значений
     public static Object[] generateRandomData() {
         Random random = new Random();
-        long id = random.nextLong() + 1;
+        long id = random.nextInt(1000);
         String time = "2023-04-10 " + String.format("%02d", random.nextInt(24)) + ":" + String.format("%02d", random.nextInt(60)) + ":" + String.format("%02d", random.nextInt(60));
         String carId = randomString(5);
         String typeOfCar = Integer.toString(random.nextInt(5));
